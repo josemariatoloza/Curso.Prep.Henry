@@ -38,7 +38,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  return array[array.length] = elemento;
+  return array.push(elemento); //no entiendo porque no está funcionando
 }
 
 
@@ -134,7 +134,8 @@ function cuentoElementos(arreglo){
   //Escribe tu código aquí
   let contador = 0;
   for(let i = 0; i < arreglo.length; i++){
-    if(arreglo[i] > 8){
+    if(arreglo[i] > 18){
+      contador ++;
     }
   }
   return contador;
